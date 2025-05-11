@@ -1,0 +1,20 @@
+Graphics kp = e.Graphics;
+Pen mypen = new Pen(Color.Orange, 5);
+
+
+kp.DrawLine(mypen, x1, y1, x2, y2);
+
+
+using (Font font1 = new Font("Times New Roman", 24, FontStyle.Bold, GraphicsUnit.Pixel))
+{
+    PointF pointF1 = new PointF(x, y);
+    e.Graphics.DrawString(Convert.ToString(cislo), font1, Brushes.Blue, pointF1);
+}
+
+
+SolidBrush redBrush = new SolidBrush(Color.Red);
+kp.FillRectangle(redBrush, x, y, width, height);
+
+ 
+
+ 
