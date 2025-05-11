@@ -1,0 +1,6 @@
+DialogResult answer = saveFileDialog1.ShowDialog();
+if(answer == DialogResult.OK)
+{
+    filePath = saveFileDialog1.FileName;
+}
+StreamWriter file = new StreamWriter(filePath, false, Encoding.Default);
