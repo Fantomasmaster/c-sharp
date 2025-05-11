@@ -10,3 +10,5 @@ while((line = file.ReadLine()) != null)
 {
   //code
 }
+
+file.Close();
