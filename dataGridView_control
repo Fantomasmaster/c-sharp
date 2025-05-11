@@ -1,0 +1,14 @@
+dataGridView1.Rows.Add(); //ads row
+dataGridView1.Rows.Clear(); //deletes rows
+
+string[] splitLine = splitLine.Split(';'); 
+dataGridView1.Rows[rowNumber].Cells[i].Value = splitLine[i]; //adding values
+
+int rowsCount = dataGridView1.Rows.Count; //rows count
+int collumsCount = dataGridView1.Columns.Count; //collums count
+
+string text += dataGridView1[rowNumber, collumNumber].Value.ToString(); //different way of reading value
+
+dataGridView1.CurrentRow // =currently selected row in dataGridView1
+  
+  
