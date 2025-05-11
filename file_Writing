@@ -4,3 +4,6 @@ if(answer == DialogResult.OK)
     filePath = saveFileDialog1.FileName;
 }
 StreamWriter file = new StreamWriter(filePath, false, Encoding.Default);
+
+ file.Write("jkjdsfkj");
+ file.WriteLine("kjansdkjns");
