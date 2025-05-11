@@ -1,0 +1,4 @@
+if (radioButton1.Checked){
+  //code
+}
+
