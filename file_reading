@@ -12,3 +12,6 @@ while((line = file.ReadLine()) != null)
 }
 
 file.Close();
+
+
+string file_text = file.ReadToEnd(); // =reading whole file
