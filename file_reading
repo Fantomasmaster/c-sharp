@@ -1,0 +1,12 @@
+DialogResult answer = openFileDialog1.ShowDialog();
+if(answer == DialogResult.OK)
+{
+    pathToFile = openFileDialog1.FileName;
+}
+StreamReader file = new StreamReader(pathToFile, Encoding.Default);
+
+string line;
+while((line = file.ReadLine()) != null)
+{
+  //code
+}
