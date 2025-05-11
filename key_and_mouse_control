@@ -1,0 +1,26 @@
+private void Form1_MouseDown(object sender, MouseEventArgs e){
+  if(e.Button == MouseButtons.Left){
+    //code
+  }
+}
+
+
+private void panel1_MouseClick(object sender, MouseEventArgs e)
+{
+  e.X // = X coordinates of mouseclick
+  e.Y // = Y coordinates of mouseclick
+}
+
+
+private void Form1_KeyDown(object sender, KeyEventArgs e)
+{
+  if(e.KeyValue == 37) // =checking ASCII value of pressed key
+  {
+   //code
+  }
+  
+  if(e.KeyCode == Keys.A) // = checking string value of pressed Key
+  {
+    //code
+  }
+}
