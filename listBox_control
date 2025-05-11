@@ -1,0 +1,28 @@
+listBox1.Items.Clear(); // =clearing listBox
+
+listBox1.Items.Add(line); // =adding line to listbox to the end of the listbox
+
+listBox1.Items.Insert(index, line); // =adding line to listbox to the selected index
+
+listBox1.Items[index] = line; // =different way of adding value to selected index
+
+int index = listBox1.SelectedIndex; // =value of selected Index
+
+MessageBox.Show(listBox1.Items[index].ToString()); // =showing value of item in listbox at index index
+
+listBox1.Items.RemoveAt(index); // =removing item at index
+
+listBox1.SelectionMode = SelectionMode.MultiExtended; // =allows multiple selections from a listBox
+
+ var poleIndexu = listBox1.SelectedIndices;
+ string zprava = "Vybráno: " + Environment.NewLine;
+ foreach (int index in poleIndexu)
+ {
+     zprava += listBox1.Items[index].ToString() + Environment.NewLine;
+ }
+ MessageBox.Show(zprava); // =code for writing out multiple selected items
+
+listBox2.Items.AddRange(arr); //= Adds an array of items to the list of items
+
+
+
